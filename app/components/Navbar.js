@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { BiChevronDown } from "react-icons/bi";
+import { open } from "../layout";
 const Navbar = () => {
   const links = [
     "Find Reservations",
@@ -11,8 +12,12 @@ const Navbar = () => {
     "Support",
   ];
   const sign = ["Login", "Sign Up"];
-  const menu = links.map((link, i) => (
-    <Link className="sm:text-base font-medium px-6 py-2" key={i} href={link}>
+  const menu = links?.map((link, i) => (
+    <Link
+      className="text-sm md:text-base md:font-medium xl:text-lg ml-1 hover:text-primary xl:px-4 py-2"
+      key={i}
+      href={link}
+    >
       {link === "Package" || link === "About Lakshadweep" ? (
         <span className="flex items-center ">
           {link} <BiChevronDown size={23} />
@@ -24,24 +29,36 @@ const Navbar = () => {
   ));
 
   return (
-    <nav className="bg-blue py-2 lg:py-4">
-      <div className="sm:flex sm:mx-auto max-w-7xl justify-between items-center">
+    <nav className="bg-transparent py-2 xl:py-4 p-2">
+      <div className="mx-4 md:mx-auto md:flex max-w-7xl border border-red-300 justify-between items-center">
         <div className="sm:text-lg sm:flex justify-start items-center">
-          <Image src="/logo.png" alt="logo" height="56" width="99" />
-          {menu}
+          <Link href={"/"}>
+            <Image src="/logo.png" alt="logo" layout="responsive" />
+          </Link>
+          <div className="hidden lg:flex">{menu}</div>
         </div>
-        <div>
+        <div className="flex flex-grow-0 gap-1">
           {sign?.map((signBtn) => (
             <button
               key={signBtn}
-              className={`px-6 py-2 font-medium text-accent ${
+              className={`px-4 lg:px-6 py-2 font-semibold text-accent transition-colors duration-200 hover:text-neutral ${
                 signBtn === "Sign Up" &&
-                "rounded-full text-light hover:bg-primary bg-accent"
-              }`}
+                "rounded-full text-light hover:text-light hidden lg:inline-block hover:bg-primary bg-accent"
+              } ${open.className} font-linkline`}
             >
               {signBtn}
             </button>
           ))}
+          <div className="bg-primary">
+            <Image
+              className="lg:hidden"
+              src={"/hamburger.svg"}
+              alt={"hamburger"}
+              width={30}
+              height={30}
+            />
+            {menu}
+          </div>
         </div>
       </div>
     </nav>

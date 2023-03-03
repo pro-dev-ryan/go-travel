@@ -16,9 +16,9 @@ module.exports = {
         blue: "#D2F4FF",
       },
       fontFamily: {
-        headline: ["--font-headline"],
-        link: ["--font-textline"],
-        textline: ["font-regular"],
+        headline: ["var--(font-headline)"],
+        linkline: ["var--(font-linkline)"],
+        textline: ["var--(font-regular)"],
       },
     },
   },
