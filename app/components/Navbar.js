@@ -29,21 +29,21 @@ const Navbar = () => {
   ));
 
   return (
-    <nav className="bg-transparent py-2 xl:py-4 p-2">
-      <div className="mx-4 md:mx-auto md:flex max-w-7xl border border-red-300 justify-between items-center">
+    <nav className="bg-transparent py-2 xl:py-4 p-2 sticky top-1">
+      <div className="mx-4 md:mx-auto md:flex max-w-7xl justify-between items-center">
         <div className="sm:text-lg sm:flex justify-start items-center">
           <Link href={"/"}>
-            <Image src="/logo.png" alt="logo" layout="responsive" />
+            <Image src="/logo.png" alt="logo" width={90} height={90} />
           </Link>
           <div className="hidden lg:flex">{menu}</div>
         </div>
-        <div className="flex flex-grow-0 gap-1">
+        <div className="flex flex-col lg:flex-row gap-1">
           {sign?.map((signBtn) => (
             <button
               key={signBtn}
               className={`px-4 lg:px-6 py-2 font-semibold text-accent transition-colors duration-200 hover:text-neutral ${
                 signBtn === "Sign Up" &&
-                "rounded-full text-light hover:text-light hidden lg:inline-block hover:bg-primary bg-accent"
+                "rounded-full text-light hover:text-white hidden lg:inline-block hover:bg-primary bg-accent"
               } ${open.className} font-linkline`}
             >
               {signBtn}
@@ -57,7 +57,7 @@ const Navbar = () => {
               width={30}
               height={30}
             />
-            {menu}
+            <span className="lg:hidden">{menu}</span>
           </div>
         </div>
       </div>

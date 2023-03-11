@@ -3,6 +3,24 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+.hero-bg {
+  position: absolute;
+  z-index: -1;
+  right: 0;
+  top: 5;
+  background-image: url("/assets/hero/map.png");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: calc(56% + 350px);
+  height: 750px;
+  border: 1px solid greenyellow;
+}
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -16,4 +34,8 @@ h3 {
 
 p {
   @apply text-sm sm:text-base lg:text-lg text-neutral font-normal;
+}
+
+.section {
+  @apply px-2 md:px-5 lg:px-10;
 }
