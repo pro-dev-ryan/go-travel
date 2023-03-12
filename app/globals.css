@@ -12,14 +12,13 @@ body::-webkit-scrollbar {
   position: absolute;
   z-index: -1;
   right: 0;
-  top: 5;
+  top: 0;
   background-image: url("/assets/hero/map.png");
-  background-position: top;
+  background-position: right;
   background-repeat: no-repeat;
-  background-size: cover;
-  width: calc(56% + 350px);
-  height: 750px;
-  border: 1px solid greenyellow;
+  background-size: 70%;
+  width: calc(60% + 350px);
+  height: 650px;
 }
 @tailwind base;
 @tailwind components;

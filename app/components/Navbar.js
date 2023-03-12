@@ -14,7 +14,7 @@ const Navbar = () => {
   const sign = ["Login", "Sign Up"];
   const menu = links?.map((link, i) => (
     <Link
-      className="text-sm md:text-base md:font-medium xl:text-lg ml-1 hover:text-primary xl:px-4 py-2"
+      className="text-sm md:text-base md:font-medium xl:text-lg ml-2 hover:text-primary md:px-2  xl:px-4 py-2"
       key={i}
       href={link}
     >
@@ -29,11 +29,11 @@ const Navbar = () => {
   ));
 
   return (
-    <nav className="bg-transparent py-2 xl:py-4 p-2 sticky top-1">
-      <div className="mx-4 md:mx-auto md:flex max-w-7xl justify-between items-center">
+    <nav className="bg-gradient-to-b from-blue to-light bg-no-repeat xl:py-4 sticky top-0 z-50">
+      <div className="sm:flex xl:max-w-7xl justify-between items-center px-2 md:px-5 lg:px-10 2xl:mx-auto">
         <div className="sm:text-lg sm:flex justify-start items-center">
           <Link href={"/"}>
-            <Image src="/logo.png" alt="logo" width={90} height={90} />
+            <Image src="/logo.png" alt="logo" width={80} height={80} />
           </Link>
           <div className="hidden lg:flex">{menu}</div>
         </div>
@@ -57,7 +57,7 @@ const Navbar = () => {
               width={30}
               height={30}
             />
-            <span className="lg:hidden">{menu}</span>
+            <span className="hidden">{menu}</span>
           </div>
         </div>
       </div>

@@ -26,7 +26,7 @@ export default function RootLayout({ children }) {
       lang="en"
       className={`${open.variable} ${montserrat.variable} ${inter.variable}`}
     >
-      <body className="bg-gradient-to-b from-blue to-light bg-no-repeat">
+      <body className="">
         <Navbar />
         {children}
       </body>
