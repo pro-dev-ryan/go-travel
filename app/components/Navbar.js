@@ -14,12 +14,12 @@ const Navbar = () => {
   const sign = ["Login", "Sign Up"];
   const menu = links?.map((link, i) => (
     <Link
-      className="text-sm md:text-base md:font-medium xl:text-lg lg:ml-1 hover:text-primary md:px-2  xl:px-4 py-2"
+      className="text-sm md:text-base md:font-medium xl:text-lg lg:ml-1 hover:text-primary md:px-2 xl:px-4 py-2"
       key={i}
       href={link}
     >
       {link === "Package" || link === "About Lakshadweep" ? (
-        <span className="flex items-center ">
+        <span className="lg:flex lg:items-center ">
           {link} <BiChevronDown size={23} />
         </span>
       ) : (
@@ -29,36 +29,42 @@ const Navbar = () => {
   ));
 
   return (
-    <nav className="bg-gradient-to-b from-blue to-light bg-no-repeat sticky top-0 z-50">
-      <div className="flex justify-between items-center">
-        <div className="sm:text-lg sm:flex justify-start items-center">
+    <nav className="nav-class">
+      <div className="flex justify-between items-center mx-4">
+        <div className="">
+          <Image
+            className="block lg:hidden"
+            src={"/hamburger.svg"}
+            alt={"hamburger"}
+            width={30}
+            height={30}
+          />
+          <span className="hidden">{menu}</span>
+        </div>
+        <div className="sm:text-lg">
           <Link href={"/"}>
-            <Image src="/logo.png" alt="logo" width={80} height={80} />
+            <Image
+              className=""
+              src="/logo.png"
+              alt="logo"
+              width={70}
+              height={70}
+            />
           </Link>
           <div className="hidden lg:flex">{menu}</div>
         </div>
-        <div className="flex flex-col lg:flex-row ">
+        <div className="">
           {sign?.map((signBtn) => (
             <button
               key={signBtn}
-              className={`px-4 lg:px-6 py-2 font-semibold text-accent transition-colors duration-200 hover:text-neutral ${
+              className={` lg:px-6 py-2 font-semibold text-accent transition-colors duration-200 hover:text-neutral ${
                 signBtn === "Sign Up" &&
-                "rounded-full text-light hover:text-white hidden lg:inline-block hover:bg-primary bg-accent"
+                "rounded-full text-light px-4 hover:text-white hidden lg:inline-block hover:bg-primary bg-accent"
               } ${open.className} font-linkline`}
             >
               {signBtn}
             </button>
           ))}
-          <div className="bg-primary">
-            <Image
-              className="lg:hidden"
-              src={"/hamburger.svg"}
-              alt={"hamburger"}
-              width={30}
-              height={30}
-            />
-            <span className="hidden">{menu}</span>
-          </div>
         </div>
       </div>
     </nav>

@@ -14,9 +14,9 @@ body::-webkit-scrollbar {
   right: 0;
   top: 0;
   background-image: url("/assets/hero/map.png");
-  background-position: right;
+  background-position: top right;
   background-repeat: no-repeat;
-  background-size: 70%;
+  background-size: contain;
   width: calc(60% + 350px);
   height: 650px;
 }
@@ -34,7 +34,18 @@ h3 {
 p {
   @apply text-sm sm:text-base lg:text-lg text-neutral font-normal;
 }
+.nav-class {
+  @apply bg-transparent lg:bg-gradient-to-b from-blue to-light bg-no-repeat sticky top-0 z-50 pt-5;
+}
+
+.center {
+  @apply flex items-center justify-center;
+}
+
+.mobile {
+  @apply flex flex-col md:flex-row;
+}
 
 .section {
-  @apply px-2;
+  @apply w-full md:max-w-lg xl:max-w-6xl;
 }

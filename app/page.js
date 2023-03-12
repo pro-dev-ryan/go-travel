@@ -4,9 +4,13 @@ import Hero from "./components/Hero";
 
 export default function Home() {
   return (
-    <main className=" bg-red-500 xl:max-w-7xl xl:mx-auto">
+    <main className="">
       <Hero />
-      <Image className="absolute -z-20 top-40 pt-40" src={plane} alt="travel" />
+      <Image
+        className="hidden absolute -z-20 top-40 pt-40"
+        src={plane}
+        alt="travel"
+      />
     </main>
   );
 }

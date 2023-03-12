@@ -26,7 +26,7 @@ export default function RootLayout({ children }) {
       lang="en"
       className={`${open.variable} ${montserrat.variable} ${inter.variable}`}
     >
-      <body className="">
+      <body className="section">
         <Navbar />
         {children}
       </body>
