@@ -36,5 +36,5 @@ p {
 }
 
 .section {
-  @apply px-2 md:px-5 lg:px-10;
+  @apply px-2;
 }

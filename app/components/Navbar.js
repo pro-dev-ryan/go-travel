@@ -14,7 +14,7 @@ const Navbar = () => {
   const sign = ["Login", "Sign Up"];
   const menu = links?.map((link, i) => (
     <Link
-      className="text-sm md:text-base md:font-medium xl:text-lg ml-2 hover:text-primary md:px-2  xl:px-4 py-2"
+      className="text-sm md:text-base md:font-medium xl:text-lg lg:ml-1 hover:text-primary md:px-2  xl:px-4 py-2"
       key={i}
       href={link}
     >
@@ -29,15 +29,15 @@ const Navbar = () => {
   ));
 
   return (
-    <nav className="bg-gradient-to-b from-blue to-light bg-no-repeat xl:py-4 sticky top-0 z-50">
-      <div className="sm:flex xl:max-w-7xl justify-between items-center px-2 md:px-5 lg:px-10 2xl:mx-auto">
+    <nav className="bg-gradient-to-b from-blue to-light bg-no-repeat sticky top-0 z-50">
+      <div className="flex justify-between items-center">
         <div className="sm:text-lg sm:flex justify-start items-center">
           <Link href={"/"}>
             <Image src="/logo.png" alt="logo" width={80} height={80} />
           </Link>
           <div className="hidden lg:flex">{menu}</div>
         </div>
-        <div className="flex flex-col lg:flex-row gap-1">
+        <div className="flex flex-col lg:flex-row ">
           {sign?.map((signBtn) => (
             <button
               key={signBtn}

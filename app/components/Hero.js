@@ -2,15 +2,15 @@ import Image from "next/image";
 import Visit from "../../public/assets/hero/Group 8.png";
 const Hero = () => {
   return (
-    <div className="flex md:pt-16 ">
+    <div className="flex md:pt-16 mx-auto">
       <div className="w-1/2">
-        <div className="flex gap-9 items-center w-fit px-4 py-1 rounded-full bg-blue">
+        <div className="md:flex gap-9 hidden items-center w-fit px-4 py-1 rounded-full bg-blue">
           <p className="font-headline text-4xl">Visit</p>
           <span>
             <Image src={Visit} alt="image" />
           </span>
         </div>
-        <p className="font-headline font-bold sm:text-2xl border border-red-500 md:text-4xl xl:text-6xl py-20">
+        <p className="font-headline font-bold sm:text-2xl md:text-4xl xl:text-6xl py-20">
           The Exotic <br />{" "}
           <span className="text-accent my-2 lg:inline-block">Lakshadweep</span>{" "}
           <br /> Islands
