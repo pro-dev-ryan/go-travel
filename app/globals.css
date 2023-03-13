@@ -51,9 +51,13 @@ p {
 }
 
 .abcenter {
-  @apply bg-white font-bold text-secondary px-1 absolute -top-4 right-1/2 translate-x-1/2;
+  @apply bg-white px-1 text-secondary text-base font-medium absolute left-1/2 -translate-x-1/2 flex-nowrap;
+}
+
+.searchDes {
+  @apply absolute text-secondary bg-white -top-3 font-medium text-base;
 }
 
 .frame {
-  @apply relative py-2 px-4 text-center border border-neutral rounded-md;
+  @apply relative py-2 border border-neutral rounded-md;
 }

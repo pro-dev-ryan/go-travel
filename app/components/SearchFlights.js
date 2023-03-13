@@ -2,8 +2,8 @@ import Image from "next/image";
 
 const SearchFlights = () => {
   return (
-    <div className="mx-4">
-      <div className="frame">
+    <div className="mx-4 space-y-4">
+      <div className="frame text-medium text-center">
         <Image
           className="absolute right-0 top-1/3 mr-4"
           src="../../assets/misc/2way.svg"
@@ -11,18 +11,24 @@ const SearchFlights = () => {
           height={20}
           alt="icon"
         />
-        <p className="abcenter">From-To</p>
+        <p className="abcenter -top-4 font-semibold">From - To</p>
         <select name="" id="">
           <option value="Lahore-Karachi">Lahore-Karachi</option>
           <option value="Chennai-Maldiv">Chennai-Maldiv</option>
           <option value="Delhi-Pataya">Delhi-Pataya</option>
         </select>
       </div>
-      <div>
-        <div></div>
-        <div className="frame">
-          <p className="abcenter">Depart-Return</p>
-          <p>07 Nov 23 - a3 Nov 23</p>
+      <div className="flex space-x-2 justify-between">
+        <div className="frame px-2 w-[40%]">
+          <p className="searchDes">Trip</p>
+          <select name="" id="">
+            <option value="">Return</option>
+            <option value="">One-Way</option>
+          </select>
+        </div>
+        <div className="frame p-1 w-[55%] text-center">
+          <p className="searchDes left-1/3 -translate-x-1/4">Depart-Return</p>
+          <input type="date" />
         </div>
       </div>
     </div>
