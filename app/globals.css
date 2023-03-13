@@ -49,3 +49,11 @@ p {
 .section {
   @apply w-full md:max-w-lg xl:max-w-6xl;
 }
+
+.abcenter {
+  @apply bg-white font-bold text-secondary px-1 absolute -top-4 right-1/2 translate-x-1/2;
+}
+
+.frame {
+  @apply relative py-2 px-4 text-center border border-neutral rounded-md;
+}

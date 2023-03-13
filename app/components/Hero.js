@@ -5,8 +5,8 @@ import { open } from "../layout";
 const Hero = () => {
   return (
     <div className="flex md:pt-16 mx-auto">
-      <div className="absolute top-0 hero-bg">
-        {/* <Image src={map} alt={map} className="object-fill scale-125" /> */}
+      <div className=" absolute lg:hidden bg-gradient-to-b from-blue to-light bg-no-repeat -z-10 -top-16">
+        <Image src={map} alt={map} className="object-cover -z-30" />
       </div>
       <div className="w-full text-center lg:w-1/2">
         <div className="md:flex gap-9 hidden items-center w-fit px-4 py-1 rounded-full bg-blue">
