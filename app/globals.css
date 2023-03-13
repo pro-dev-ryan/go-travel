@@ -28,7 +28,7 @@ h1 {
   @apply text-2xl sm:text-3xl lg:text-6xl text-secondary font-bold;
 }
 h3 {
-  @apply text-xl sm:text-2xl lg:text-2xl text-secondary font-bold;
+  @apply text-2xl sm:text-2xl lg:text-2xl text-secondary font-bold;
 }
 
 p {
@@ -55,9 +55,13 @@ p {
 }
 
 .searchDes {
-  @apply absolute px-1 text-secondary bg-white -top-3 font-medium text-sm;
+  @apply absolute px-1 text-secondary font-medium bg-white -top-3 text-sm;
 }
 
 .frame {
-  @apply relative py-3 border border-neutral rounded-md;
+  @apply relative py-3 border border-neutral rounded-sm;
+}
+
+.primaryButton {
+  @apply center py-3 px-4 bg-accent text-white gap-2 rounded hover:bg-primary;
 }

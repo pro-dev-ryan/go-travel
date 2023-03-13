@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const SearchFlights = () => {
   return (
-    <div className="mx-4 space-y-4">
+    <div className="mx-4 space-y-4 text-center font-headline text-secondary">
       <div className="frame text-medium text-center">
         <Image
           className="absolute right-0 top-1/3 mr-4"
@@ -30,6 +30,20 @@ const SearchFlights = () => {
           <p className="searchDes left-1/3 -translate-x-1/4">Depart-Return</p>
           <input type="date" />
         </div>
+      </div>
+      <p className="text-base font-linkline font-medium">+ Add Promo Code</p>
+      <div className="center">
+        <button className="primaryButton">
+          <span>
+            <Image
+              src="../../assets/misc/paper-plane.svg"
+              alt="plane"
+              width={18}
+              height={18}
+            />
+          </span>
+          Show Flights
+        </button>
       </div>
     </div>
   );
