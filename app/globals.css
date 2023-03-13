@@ -55,9 +55,9 @@ p {
 }
 
 .searchDes {
-  @apply absolute text-secondary bg-white -top-3 font-medium text-base;
+  @apply absolute px-1 text-secondary bg-white -top-3 font-medium text-sm;
 }
 
 .frame {
-  @apply relative py-2 border border-neutral rounded-md;
+  @apply relative py-3 border border-neutral rounded-md;
 }
