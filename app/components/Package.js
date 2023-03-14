@@ -3,9 +3,9 @@ import Card from "./Card";
 
 const Package = () => {
   return (
-    <div className="space-y-10 text-center">
+    <div className="cardFrame">
       <h3>Best Packages For You</h3>
-      <p className="mx-1 font-light text-base">
+      <p className="lightText">
         This is a unique experience on ship, sea and land, exploring different
         coral islands of Lakshadweep.
       </p>
@@ -25,6 +25,7 @@ const Package = () => {
           <Card key={i} pack={pack} />
         ))}
       </div>
+      <button className="outlineButton">Discover More</button>
     </div>
   );
 };

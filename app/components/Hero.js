@@ -22,9 +22,7 @@ const Hero = () => {
           <span className="text-accent my-2 lg:inline-block">Lakshadweep </span>
           Islands
         </p>
-        <button className="border border-accent px-8 py-4 mx-auto rounded-sm lg:rounded-md font-bold text-base text-accent hover:bg-accent hover:text-white hover:border-none transition-border duration-100">
-          Discover Now
-        </button>
+        <button className="outlineButton">Discover Now</button>
       </div>
       <span className="hero-bg hidden md:top-20"></span>
       <div className="w-1/2 section relative hidden lg:block">

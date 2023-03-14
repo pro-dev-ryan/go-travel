@@ -1,6 +1,7 @@
 import Image from "next/image";
 import plane from "../public/assets/hero/Group 1000003659.png";
 import Hero from "./components/Hero";
+import Island from "./components/Island";
 import Package from "./components/Package";
 import SearchFlights from "./components/SearchFlights";
 
@@ -15,6 +16,7 @@ export default function Home() {
       />
       <SearchFlights />
       <Package />
+      <Island />
     </main>
   );
 }

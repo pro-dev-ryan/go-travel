@@ -34,6 +34,15 @@ h3 {
 p {
   @apply text-sm sm:text-base lg:text-lg text-neutral font-normal;
 }
+
+.lightText {
+  @apply mx-1 font-light text-base;
+}
+
+.cardPlate {
+  @apply mx-4 rounded shadow-sm space-y-2 shadow-gray-400;
+}
+
 .nav-class {
   @apply bg-transparent lg:bg-gradient-to-b from-blue to-light bg-no-repeat sticky top-0 z-50 pt-5;
 }
@@ -63,7 +72,15 @@ p {
 }
 
 .primaryButton {
-  @apply center py-3 font-medium font-headline bg-accent text-white gap-2 rounded hover:bg-primary;
+  @apply center py-2 font-medium font-headline bg-accent text-white gap-2 rounded hover:bg-primary;
+}
+
+.outlineButton {
+  @apply border border-accent px-8 py-4 mx-auto rounded-sm lg:rounded-md font-bold text-base text-accent hover:bg-accent hover:text-white hover:border-none transition-all duration-100;
+}
+
+.cardFrame {
+  @apply space-y-10 text-center;
 }
 
 .navButton {
