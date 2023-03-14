@@ -63,9 +63,9 @@ p {
 }
 
 .primaryButton {
-  @apply center py-3 px-4 bg-accent text-white gap-2 rounded hover:bg-primary;
+  @apply center py-3 font-medium font-headline bg-accent text-white gap-2 rounded hover:bg-primary;
 }
 
 .navButton {
-  @apply px-10 py-3 text-accent hover:text-light border font-semibold border-neutral hover:bg-accent;
+  @apply px-[6.5%] py-3 text-accent hover:text-light border font-semibold border-neutral hover:bg-accent;
 }

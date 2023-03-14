@@ -9,17 +9,17 @@ const Package = () => {
         This is a unique experience on ship, sea and land, exploring different
         coral islands of Lakshadweep.
       </p>
-      <nav className="">
-        <Link href={"/"} className="navButton rounded-bl-md rounded-tl-md">
+      <div className="mx-2">
+        <Link href="/" className="navButton rounded-bl-md rounded-tl-md">
           Maldives
         </Link>
-        <Link href={"/"} className="navButton">
+        <Link href="/" className="navButton">
           Samudram
         </Link>
-        <Link href={"/"} className="navButton">
+        <Link href="/" className="navButton">
           More
         </Link>
-      </nav>
+      </div>
       <div className="center">
         <Card />
       </div>

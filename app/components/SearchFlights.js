@@ -33,7 +33,7 @@ const SearchFlights = () => {
       </div>
       <p className="text-base font-linkline font-medium">+ Add Promo Code</p>
       <div className="center">
-        <button className="primaryButton">
+        <button className="primaryButton px-4">
           <span>
             <Image
               src="../../assets/misc/paper-plane.svg"

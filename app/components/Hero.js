@@ -4,7 +4,7 @@ import map from "../../public/assets/hero/map.png";
 import { open } from "../layout";
 const Hero = () => {
   return (
-    <div className="flex md:pt-16 mx-auto">
+    <div className="flex md:pt-16 ">
       <div className=" absolute lg:hidden bg-gradient-to-b from-blue to-light bg-no-repeat -z-10 -top-16">
         <Image src={map} alt={map} className="object-cover -z-30" />
       </div>
