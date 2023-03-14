@@ -1,6 +1,4 @@
 import Image from "next/image";
-import pin from "../../public/assets/misc/pin.svg";
-
 const Card = () => {
   return (
     <div className="mx-4 rounded shadow-sm space-y-2 shadow-gray-400">
@@ -11,7 +9,7 @@ const Card = () => {
         width={425}
         height={350}
       />
-      <div className="flex justify-between items-center mx-2">
+      <div className="flex justify-between items-center m-2">
         <div className="flex gap-2 ">
           <Image
             src="/assets/misc/pin.png"
@@ -36,7 +34,7 @@ const Card = () => {
         agency...
       </p>
       <div className="center ">
-        <button className="primaryButton text-lg px-6">Book Now</button>
+        <button className="primaryButton my-2 text-lg px-[5%]">Book Now</button>
       </div>
     </div>
   );

@@ -20,8 +20,10 @@ const Package = () => {
           More
         </Link>
       </div>
-      <div className="center">
-        <Card />
+      <div className=" space-y-5">
+        {[...Array(3)].map((pack, i) => (
+          <Card key={i} pack={pack} />
+        ))}
       </div>
     </div>
   );
