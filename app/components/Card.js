@@ -2,13 +2,18 @@ import Image from "next/image";
 const Card = () => {
   return (
     <div className="mx-4 rounded shadow-sm space-y-2 shadow-gray-400">
-      <Image
-        className="rounded-tl rounded-tr"
-        src="/assets/packages/p4.jpg"
-        alt="package"
-        width={425}
-        height={350}
-      />
+      <div className="relative">
+        <Image
+          className="rounded-tl rounded-tr"
+          src="/assets/packages/p4.jpg"
+          alt="package"
+          width={425}
+          height={350}
+        />
+        <p className="absolute top-3 right-0 mr-3 text-accent bg-white text-lg font-semibold px-2 rounded-2xl">
+          <span>&#8377;</span> 500
+        </p>
+      </div>
       <div className="flex justify-between items-center m-2">
         <div className="flex gap-2 ">
           <Image
