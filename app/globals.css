@@ -20,12 +20,33 @@ body::-webkit-scrollbar {
   width: calc(60% + 350px);
   height: 650px;
 }
+
+.contact-bg {
+  position: relative;
+  background-image: url("/assets/hero/map.png");
+  background-repeat: no-repeat;
+  border-radius: 12px;
+  background-size: cover;
+  background-position: center center;
+}
+.contact-bg::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  top: 0;
+  left: 0;
+  z-index: -5;
+  background-color: #42a7c3;
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 h1 {
-  @apply text-2xl sm:text-3xl lg:text-6xl text-secondary font-bold;
+  @apply text-3xl sm:text-3xl lg:text-6xl text-secondary font-bold;
 }
 h3 {
   @apply text-2xl sm:text-2xl lg:text-2xl text-secondary font-bold;
@@ -39,8 +60,12 @@ p {
   @apply mx-1 font-light text-base;
 }
 
+.cardFrame {
+  @apply space-y-10 text-center;
+}
+
 .cardPlate {
-  @apply mx-4 rounded shadow-sm space-y-2 shadow-gray-400;
+  @apply mx-4 rounded space-y-5;
 }
 
 .nav-class {
@@ -71,16 +96,14 @@ p {
   @apply relative py-3 border border-neutral rounded-sm;
 }
 
-.primaryButton {
-  @apply center py-2 font-medium font-headline bg-accent text-white gap-2 rounded hover:bg-primary;
+@layer components {
+  .primaryButton {
+    @apply center py-2 font-medium font-headline bg-accent text-white gap-2 rounded hover:bg-primary;
+  }
 }
 
 .outlineButton {
   @apply border border-accent px-8 py-4 mx-auto rounded-sm lg:rounded-md font-bold text-base text-accent hover:bg-accent hover:text-white hover:border-none transition-all duration-100;
-}
-
-.cardFrame {
-  @apply space-y-10 text-center;
 }
 
 .navButton {

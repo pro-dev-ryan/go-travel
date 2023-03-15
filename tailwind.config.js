@@ -14,6 +14,7 @@ module.exports = {
         neutral: "#5A5A5A",
         light: "#ffffff",
         blue: "#D2F4FF",
+        contact: "#42A7C3",
       },
       fontFamily: {
         headline: ["var--(font-headline)"],

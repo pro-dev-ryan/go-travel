@@ -1,13 +1,15 @@
 import Image from "next/image";
 import plane from "../public/assets/hero/Group 1000003659.png";
+import Contact from "./components/Contact";
 import Hero from "./components/Hero";
 import Island from "./components/Island";
 import Package from "./components/Package";
 import SearchFlights from "./components/SearchFlights";
+import Testimonials from "./components/Testimonials";
 
 export default function Home() {
   return (
-    <main className="space-y-20">
+    <main className="space-y-20 mx-2">
       <Hero />
       <Image
         className="hidden absolute -z-20 top-40 pt-40"
@@ -17,6 +19,8 @@ export default function Home() {
       <SearchFlights />
       <Package />
       <Island />
+      <Contact />
+      <Testimonials />
     </main>
   );
 }

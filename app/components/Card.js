@@ -1,7 +1,7 @@
 import Image from "next/image";
 const Card = () => {
   return (
-    <div className="mx-4 rounded shadow-sm space-y-2 shadow-gray-400">
+    <div className="cardPlate shadow">
       <div className="relative">
         <Image
           className="rounded-tl rounded-tr"
