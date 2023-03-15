@@ -7,8 +7,8 @@ const Testimonials = () => {
         What Our Clients Says <br /> About Us
       </h3>
       <div className="space-y-20">
-        {[...Array(3)].map((card) => (
-          <Testimonial key={card} />
+        {[...Array(3)].map((card, i) => (
+          <Testimonial key={i} card={card} />
         ))}
       </div>
     </div>

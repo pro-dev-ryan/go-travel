@@ -2,8 +2,8 @@ import Image from "next/image";
 
 const Testimonial = () => {
   return (
-    <div className="center relative cardPlate cardFrame border border-primary p-5 h-80">
-      <div className="absolute -top-12">
+    <div className="center relative cardPlate cardFrame shadow border-t-4 border-t-accent p-5 h-80">
+      <div className="absolute -top-14">
         <Image
           className="rounded-full border-8 border-light"
           src="https://api.lorem.space/image/face?w=150&h=150"
@@ -20,14 +20,14 @@ const Testimonial = () => {
           nemo exercitationem amet dolore ut?
         </p>
         <div className="center gap-4">
-          {[...Array(5)].map((stars) => (
+          {[...Array(5)].map((stars, i) => (
             <Image
-              key={stars}
+              key={i}
               stars={stars}
               src="/assets/misc/star.svg"
               alt="rating"
-              width={20}
-              height={20}
+              width={25}
+              height={25}
             />
           ))}
         </div>

@@ -41,15 +41,42 @@ body::-webkit-scrollbar {
   background-color: #42a7c3;
 }
 
+.getApp {
+  background-color: #000000;
+  position: relative;
+  border-radius: 12px;
+}
+
+.getApp::before {
+  content: "";
+  position: absolute;
+  border-radius: 12px;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-image: url("/assets/misc/Group\ 42.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.3;
+  z-index: 1;
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+  .primaryButton {
+    @apply center py-2 font-medium font-headline bg-accent text-white gap-2 rounded hover:bg-primary;
+  }
+  h3 {
+    @apply text-2xl sm:text-2xl lg:text-2xl text-secondary font-bold;
+  }
+}
+
 h1 {
   @apply text-3xl sm:text-3xl lg:text-6xl text-secondary font-bold;
-}
-h3 {
-  @apply text-2xl sm:text-2xl lg:text-2xl text-secondary font-bold;
 }
 
 p {
@@ -65,7 +92,7 @@ p {
 }
 
 .cardPlate {
-  @apply mx-4 rounded space-y-5;
+  @apply mx-4 rounded space-y-5 font-headline;
 }
 
 .nav-class {
@@ -94,12 +121,6 @@ p {
 
 .frame {
   @apply relative py-3 border border-neutral rounded-sm;
-}
-
-@layer components {
-  .primaryButton {
-    @apply center py-2 font-medium font-headline bg-accent text-white gap-2 rounded hover:bg-primary;
-  }
 }
 
 .outlineButton {
