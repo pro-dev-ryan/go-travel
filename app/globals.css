@@ -116,7 +116,7 @@ p {
 }
 
 .nav-class {
-  @apply bg-transparent lg:bg-gradient-to-b from-blue to-light bg-no-repeat sticky top-0 z-50 pt-5;
+  @apply bg-transparent backdrop-blur-sm lg:bg-gradient-to-b from-blue to-light bg-no-repeat sticky top-0 z-50 pt-5;
 }
 
 .center {
@@ -149,4 +149,16 @@ p {
 
 .navButton {
   @apply px-[6.5%] py-3 text-accent hover:text-light border font-semibold border-neutral hover:bg-accent;
+}
+
+.selection {
+  @apply w-11/12 border mx-auto p-2 border-primary;
+}
+
+.select {
+  @apply bg-transparent flex items-center justify-between w-full text-light text-center outline-none;
+}
+
+.links {
+  @apply bg-white p-0.5 rounded-xl;
 }

@@ -3,51 +3,61 @@ import Link from "next/link";
 
 const Footer = () => {
   return (
-    <div className="cardFrame footer-bg">
-      <div className="flex flex-col items-center ">
+    <div className="footer-bg space-y-4">
+      <div className="flex flex-col items-center cardPlate ">
         {/* Company */}
-        <select>
-          <option value="">Company</option>
-        </select>
+        <div className="selection">
+          <select className="select">
+            <option value="">Company</option>
+          </select>
+        </div>
         {/* About */}
-        <select>
-          <option value="">About</option>
-        </select>
+        <div className="selection">
+          <select className="select">
+            <option value="">About</option>
+          </select>
+        </div>
         {/* Contact Us */}
-        <select>
-          <option value="">Contact Us</option>
-        </select>
+        <div className="selection">
+          <select className="select">
+            <option value="">Contact Us</option>
+          </select>
+        </div>
       </div>
-      <div>
+      <div className="py-2 center gap-3">
         {/* Social Links */}
-        <Link href="/">
-          <Image src="/assets/footer/fb.svg" alt="" width={20} height={20} />
+        <Link className="links" href="/">
+          <Image src="/assets/footer/fb.svg" alt="" width={25} height={25} />
         </Link>
-        <Link href="/">
+        <Link className="links" href="/">
           <Image
             src="/assets/footer/twitter.svg"
             alt=""
-            width={20}
-            height={20}
+            width={25}
+            height={25}
           />
         </Link>
-        <Link href="/">
+        <Link className="links" href="/">
           <Image
             src="/assets/footer/linkedin.svg"
             alt=""
-            width={20}
-            height={20}
+            width={25}
+            height={25}
           />
         </Link>
-        <Link href="/">
+        <Link className="links" href="/">
           <Image
             src="/assets/footer/instagram.svg"
             alt=""
-            width={20}
-            height={20}
+            width={25}
+            height={25}
           />
         </Link>
       </div>
+      <hr className="mx-4" />
+      <p className="text-light text-xs font-light font-headline text-center pb-2">
+        Copyright © 2023 GoL Travels Private Limited. All Rights Reserved.
+      </p>
     </div>
   );
 };
