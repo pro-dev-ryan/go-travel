@@ -2,53 +2,49 @@ import Image from "next/image";
 import Link from "next/link";
 import { BiChevronDown } from "react-icons/bi";
 import { open } from "../layout";
+import NavMenu from "./Clients/NavMenu";
+
+const links = [
+  "Find Reservations",
+  "Package",
+  "About Lakshadweep",
+  "About Us",
+  "Gol",
+  "Support",
+];
+
+export const menu = links?.map((link, i) => (
+  <Link
+    className="text-sm border border-primary w-full text-center md:text-base font-medium xl:text-lg lg:ml-1 hover:text-primary md:px-2 xl:px-4 py-5 my-px"
+    key={i}
+    href={link}
+  >
+    {link === "Package" || link === "About Lakshadweep" ? (
+      <span className="lg:flex lg:items-center ">
+        {link} <BiChevronDown className="hidden sm:block" size={23} />
+      </span>
+    ) : (
+      link
+    )}
+  </Link>
+));
 const Navbar = () => {
-  const links = [
-    "Find Reservations",
-    "Package",
-    "About Lakshadweep",
-    "About Us",
-    "Gol",
-    "Support",
-  ];
   const sign = ["Login", "Sign Up"];
-  const menu = links?.map((link, i) => (
-    <Link
-      className="text-sm md:text-base md:font-medium xl:text-lg lg:ml-1 hover:text-primary md:px-2 xl:px-4 py-2"
-      key={i}
-      href={link}
-    >
-      {link === "Package" || link === "About Lakshadweep" ? (
-        <span className="lg:flex lg:items-center ">
-          {link} <BiChevronDown size={23} />
-        </span>
-      ) : (
-        link
-      )}
-    </Link>
-  ));
 
   return (
-    <nav className="nav-class">
+    <nav className="nav-class relative pb-2">
       <div className="flex justify-between items-center mx-4">
-        <div className="">
-          <Image
-            className="block lg:hidden"
-            src={"/hamburger.svg"}
-            alt={"hamburger"}
-            width={30}
-            height={30}
-          />
-          <span className="hidden">{menu}</span>
-        </div>
-        <div className="sm:text-lg">
+        <span>
+          <NavMenu />
+        </span>
+        <div className="w-fit">
           <Link href={"/"}>
             <Image
               className=""
               src="/logo.png"
               alt="logo"
-              width={70}
-              height={70}
+              width={60}
+              height={60}
             />
           </Link>
           <div className="hidden lg:flex">{menu}</div>
