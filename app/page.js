@@ -10,7 +10,7 @@ import Testimonials from "./components/Testimonials";
 
 export default function Home() {
   return (
-    <main className="space-y-20 mx-2">
+    <main className="space-y-20">
       <Hero />
       <Image
         className="hidden absolute -z-20 top-40 pt-40"

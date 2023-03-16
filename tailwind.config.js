@@ -15,6 +15,7 @@ module.exports = {
         light: "#ffffff",
         blue: "#D2F4FF",
         contact: "#42A7C3",
+        footer: "#41A5C1",
       },
       fontFamily: {
         headline: ["var--(font-headline)"],
