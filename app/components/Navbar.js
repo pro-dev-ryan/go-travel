@@ -32,8 +32,8 @@ const Navbar = () => {
   const sign = ["Login", "Sign Up"];
 
   return (
-    <nav className="nav-class relative z-50 pb-2">
-      <div className="flex justify-between items-center mx-4">
+    <nav className="nav-class py-2">
+      <div className="flex relative justify-between items-center mx-4 z-40">
         <span className="">
           <NavMenu />
         </span>

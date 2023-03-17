@@ -116,7 +116,7 @@ p {
 }
 
 .nav-class {
-  @apply bg-transparent backdrop-blur-sm lg:bg-gradient-to-b from-blue to-light bg-no-repeat sticky top-0 z-50 pt-5;
+  @apply bg-transparent backdrop-blur-sm lg:bg-gradient-to-b from-blue to-light bg-no-repeat sticky top-0 z-50;
 }
 
 .center {
