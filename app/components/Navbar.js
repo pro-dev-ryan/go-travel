@@ -4,7 +4,7 @@ import { BiChevronDown } from "react-icons/bi";
 import { open } from "../layout";
 import NavMenu from "./Clients/NavMenu";
 
-const links = [
+export const links = [
   "Find Reservations",
   "Package",
   "About Lakshadweep",
@@ -13,7 +13,7 @@ const links = [
   "Support",
 ];
 
-export const menu = links?.map((link, i) => (
+const menu = links?.map((link, i) => (
   <Link
     className="text-sm border border-primary w-full text-center md:text-base font-medium xl:text-lg lg:ml-1 hover:text-primary md:px-2 xl:px-4 py-5 my-px"
     key={i}
