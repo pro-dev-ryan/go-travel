@@ -116,7 +116,7 @@ p {
 }
 
 .nav-class {
-  @apply bg-transparent backdrop-blur-sm lg:bg-gradient-to-b from-blue to-light bg-no-repeat sticky top-0 z-50;
+  @apply sticky top-0 z-50 bg-transparent backdrop-blur-sm lg:bg-gradient-to-b from-blue to-light bg-no-repeat py-2;
 }
 
 .center {
@@ -128,7 +128,7 @@ p {
 }
 
 .section {
-  @apply w-full md:max-w-lg xl:max-w-6xl;
+  @apply w-full xl:max-w-6xl;
 }
 
 .abcenter {
