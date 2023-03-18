@@ -13,7 +13,7 @@ export default function Home() {
     <main className="space-y-20">
       <Hero />
       <Image
-        className="hidden absolute -z-20 top-40 pt-40"
+        className="hidden md:block absolute -z-20 md:top-5 top-40 pt-40"
         src={plane}
         alt="travel"
       />

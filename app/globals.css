@@ -116,7 +116,7 @@ p {
 }
 
 .nav-class {
-  @apply sticky top-0 z-50 bg-transparent backdrop-blur-sm lg:bg-gradient-to-b from-blue to-light bg-no-repeat py-2;
+  @apply sticky top-0 z-50 bg-transparent backdrop-blur-sm md:bg-gradient-to-b from-blue to-light bg-no-repeat py-2;
 }
 
 .center {
@@ -144,7 +144,7 @@ p {
 }
 
 .outlineButton {
-  @apply border border-accent px-8 py-4 mx-auto rounded-sm lg:rounded-md font-bold text-base text-accent hover:bg-accent hover:text-white hover:border-none transition-all duration-100;
+  @apply border border-accent px-8 py-4 mx-auto rounded-sm lg:rounded-md font-bold text-base md:text-lg text-accent hover:bg-accent hover:text-white hover:border-none transition-all duration-100;
 }
 
 .navButton {
