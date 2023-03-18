@@ -3,24 +3,27 @@ import Card from "./Card";
 
 const Package = () => {
   return (
-    <div className="cardFrame">
+    <div className="cardFrame mx-4 md:mx-16">
       <h3>Best Packages For You</h3>
       <p className="lightText">
         This is a unique experience on ship, sea and land, exploring different
         coral islands of Lakshadweep.
       </p>
-      <div className="mx-2">
+      <div className="flex md:mx-0 border-y border-secondary rounded-bl-md rounded-tl-md">
         <Link href="/" className="navButton rounded-bl-md rounded-tl-md">
           Maldives
         </Link>
         <Link href="/" className="navButton">
           Samudram
         </Link>
+        <Link href="/" className="navButton hidden md:block">
+          Cordeila
+        </Link>
         <Link href="/" className="navButton">
           More
         </Link>
       </div>
-      <div className=" space-y-5">
+      <div className="space-y-5 md:space-y-0 md:grid grid-cols-2 justify-between items-center gap-5">
         {[...Array(3)].map((pack, i) => (
           <Card key={i} pack={pack} />
         ))}
