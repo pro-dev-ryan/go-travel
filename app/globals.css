@@ -136,11 +136,15 @@ p {
 }
 
 .searchDes {
-  @apply absolute px-1 text-secondary font-medium bg-white -top-3 text-sm;
+  @apply absolute px-1 text-secondary bg-white -top-3 text-sm;
+}
+
+.searchProp {
+  @apply text-left p-1 text-xs;
 }
 
 .frame {
-  @apply relative py-3 border border-neutral rounded-sm;
+  @apply relative py-1 border border-neutral rounded-sm;
 }
 
 .outlineButton {
