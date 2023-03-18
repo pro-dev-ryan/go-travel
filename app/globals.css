@@ -108,11 +108,15 @@ p {
 }
 
 .cardFrame {
-  @apply space-y-10 text-center;
+  @apply space-y-10 text-center md:space-y-5;
 }
 
 .cardPlate {
   @apply rounded space-y-5 font-headline;
+}
+
+.stack-sect {
+  @apply space-y-10 md:space-y-0 md:grid grid-cols-2 justify-between items-center gap-5;
 }
 
 .nav-class {
