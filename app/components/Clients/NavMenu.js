@@ -10,7 +10,7 @@ const NavMenu = () => {
   const menu = links?.map((link, i) => (
     <Link
       onClick={() => setIsOpen(!isOpen)}
-      className="text-sm text-light w-full text-center font-medium hover:text-primary py-[1.14rem]"
+      className="text-sm md:text-base md:m-1.5 text-light w-full text-center font-medium hover:text-primary py-[1.14rem] md:py-6"
       key={i}
       href={link}
     >
@@ -30,8 +30,10 @@ const NavMenu = () => {
         />
       </button>
       <ul
-        className={`bg-secondary items-center absolute w-full transition-all duration-300 ease-in-out flex flex-col gap-2 ${
-          isOpen ? "opacity-1 top-[7.5rem]" : "opacity-0 top-[500px]"
+        className={`bg-secondary md:bg-primary items-center absolute w-full md:left-0 transition-all duration-300 ease-in-out flex flex-col gap-2 ${
+          isOpen
+            ? "opacity-1 top-[7.5rem] md:top-[450px]"
+            : "opacity-0 top-[1000px]"
         }`}
       >
         {menu}

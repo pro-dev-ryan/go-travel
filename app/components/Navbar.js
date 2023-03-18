@@ -32,9 +32,9 @@ const Navbar = () => {
   const sign = ["Login", "Sign Up"];
 
   return (
-    <nav className="nav-class ">
-      <div className="flex relative justify-between items-center mx-4 z-40">
-        <span className="">
+    <nav className="nav-class">
+      <div className="flex relative justify-between items-center mx-4 md:mx-16 z-40">
+        <span className="block md:hidden">
           <NavMenu />
         </span>
         <div className="w-fit">
@@ -49,11 +49,11 @@ const Navbar = () => {
           </Link>
           <div className="hidden lg:flex">{menu}</div>
         </div>
-        <div className="">
+        <div className="md:flex items-center gap-3 my-auto">
           {sign?.map((signBtn) => (
             <button
               key={signBtn}
-              className={` lg:px-6 py-2 font-semibold text-accent transition-colors duration-200 hover:text-neutral ${
+              className={` lg:px-6 py-2 md:pt-1 md:text-xl font-semibold text-accent transition-colors duration-200 hover:text-neutral ${
                 signBtn === "Sign Up" &&
                 "rounded-full text-light px-4 hover:text-white hidden lg:inline-block hover:bg-primary bg-accent"
               } ${open.className} font-linkline`}
@@ -61,6 +61,9 @@ const Navbar = () => {
               {signBtn}
             </button>
           ))}
+          <span className="hidden md:block my-2">
+            <NavMenu />
+          </span>
         </div>
       </div>
     </nav>
