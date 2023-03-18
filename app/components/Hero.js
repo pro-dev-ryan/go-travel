@@ -29,7 +29,7 @@ const Hero = () => {
             Islands
           </h3>
         </div>
-        <button className="outlineButton">Discover Now</button>
+        <button className="outlineButton px-8 py-4">Discover Now</button>
       </div>
       <span className="hero-bg hidden md:top-20"></span>
       <div className="w-1/2 section relative hidden md:block">

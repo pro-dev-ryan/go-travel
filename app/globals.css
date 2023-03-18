@@ -88,10 +88,10 @@ body::-webkit-scrollbar {
 
 @layer components {
   .primaryButton {
-    @apply center py-2 font-medium font-headline bg-accent text-white gap-2 rounded hover:bg-primary;
+    @apply center md:px-8 py-1 font-medium md:font-semibold font-headline md:text-lg bg-accent text-white gap-2 rounded hover:bg-primary;
   }
   h3 {
-    @apply text-lg sm:text-2xl lg:text-2xl text-secondary font-bold;
+    @apply text-lg md:text-2xl lg:text-2xl text-secondary font-bold;
   }
 }
 
@@ -104,7 +104,7 @@ p {
 }
 
 .lightText {
-  @apply mx-1 font-light text-base;
+  @apply mx-1 font-light text-sm;
 }
 
 .cardFrame {
@@ -148,7 +148,7 @@ p {
 }
 
 .outlineButton {
-  @apply border border-accent px-8 py-4 mx-auto rounded-sm lg:rounded-md font-bold text-base md:text-lg text-accent hover:bg-accent hover:text-white hover:border-none transition-all duration-100;
+  @apply border border-accent mx-auto rounded-sm lg:rounded-md font-semibold text-base md:text-lg text-accent hover:bg-accent hover:text-white hover:border-none transition-all duration-100;
 }
 
 .navButton {

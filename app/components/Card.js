@@ -15,7 +15,7 @@ const Card = () => {
         </p>
       </div>
       <div className="flex justify-between items-center m-2">
-        <div className="flex gap-2 ">
+        <div className="flex gap-1 ">
           <Image
             src="/assets/misc/pin.png"
             alt="location pin"
@@ -39,7 +39,7 @@ const Card = () => {
         agency...
       </p>
       <div className="center ">
-        <button className="primaryButton my-2 text-lg px-[5%]">Book Now</button>
+        <button className="primaryButton mb-5 text-lg px-[5%]">Book Now</button>
       </div>
     </div>
   );
