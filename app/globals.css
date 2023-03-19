@@ -93,6 +93,10 @@ body::-webkit-scrollbar {
   h3 {
     @apply text-lg md:text-2xl lg:text-2xl text-secondary font-bold;
   }
+
+  .stack-sect {
+    @apply space-y-10 md:space-y-0 md:grid grid-cols-2 justify-between items-center gap-5;
+  }
 }
 
 h1 {
@@ -113,10 +117,6 @@ p {
 
 .cardPlate {
   @apply rounded space-y-5 font-headline;
-}
-
-.stack-sect {
-  @apply space-y-10 md:space-y-0 md:grid grid-cols-2 justify-between items-center gap-5;
 }
 
 .nav-class {
