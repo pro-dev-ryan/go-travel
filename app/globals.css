@@ -44,8 +44,9 @@ body::-webkit-scrollbar {
 .getApp {
   background-color: #000000;
   position: relative;
+  margin: 6.5em;
   border-radius: 12px;
-  margin: 0.6em;
+  z-index: 1;
 }
 
 .getApp::before {
@@ -56,11 +57,12 @@ body::-webkit-scrollbar {
   height: 100%;
   top: 0;
   left: 0;
-  background-image: url("/assets/misc/Group\ 42.png");
+  background-image: url("/assets/misc/circles.png");
+  background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
   opacity: 0.3;
-  z-index: 1;
+  z-index: -1;
 }
 
 .footer-bg {
