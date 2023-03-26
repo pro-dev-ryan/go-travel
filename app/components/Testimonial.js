@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const Testimonial = () => {
   return (
-    <div className="center relative cardPlate cardFrame shadow border-t-4 border-t-accent p-5 h-80 md:my-14">
+    <div className="center relative cardPlate cardFrame shadow border-t-4 border-t-accent p-5 h-80 lg:h-96 md:my-14">
       <div className="absolute -top-14">
         <Image
           className="rounded-full border-8 border-light"

@@ -41,14 +41,9 @@ const Hero = () => {
         </button>
       </div>
       <span className="hero-bg hidden md:top-20"></span>
-      <div className="w-1/2 section relative hidden md:block">
-        <div className="w-full md:w-40 lg:w-40 xl:w-96">
-          <Image
-            className="absolute top-1/2 -translate-y-1/2 md:block right-0 object-cover"
-            src={model}
-            width={450}
-            alt="bg"
-          />
+      <div className="w-1/2 section hidden md:flex justify-end items-center">
+        <div className="w-full md:w-72 lg:w-96 xl:w-[470px]">
+          <Image className=" md:block" src={model} width={450} alt="bg" />
         </div>
       </div>
     </div>
