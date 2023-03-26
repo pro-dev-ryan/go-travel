@@ -22,7 +22,7 @@ const SearchFlights = () => {
                 <span>Chennai</span> - <span>Thailand</span>
               </p>
             </div>
-            <div className="hidden md:inline-block frame px-2">
+            <div className="hidden md:inline-block lg:flex flex-1 frame px-2">
               <p className="searchDes">Trip</p>
               <select name="" id="" className="searchProp">
                 <option value="">Return</option>
@@ -43,7 +43,7 @@ const SearchFlights = () => {
               <p className="searchDes left-1/3 md:left-0  -translate-x-1/4 md:translate-x-2">
                 Depart-Return
               </p>
-              <p className="searchProp">
+              <p className="searchProp lg:ml-1">
                 <span>13 Jan 23</span> - <span>16 Jan 23</span>
               </p>
             </div>
@@ -62,7 +62,7 @@ const SearchFlights = () => {
           <button className="text-base font-linkline font-medium">
             + Add Promo Code
           </button>
-          <button className="primaryButton px-4">
+          <button className="primaryButton lg:text-base lg:font-normal px-4">
             <span>
               <Image
                 src="../../assets/misc/paper-plane.svg"

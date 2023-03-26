@@ -5,22 +5,29 @@ import map from "../../public/assets/hero/map.png";
 import { open } from "../layout";
 const Hero = () => {
   return (
-    <div className="flex md:pt-16 md:px-16">
-      <div className=" absolute lg:hidden lg:bg-gradient-to-b from-blue to-light bg-no-repeat -z-10 -top-16">
-        <Image src={map} alt={map} className="object-cover -z-30" />
+    <div className="flex md:pt-16 md:px-16 xl:px-20 lg:relative">
+      <div className="absolute lg:bg-gradient-to-b from-[#E5F8FE] to-transparent bg-no-repeat -z-10 -top-16 lg:right-0 lg:left-0">
+        <Image src={map} alt={map} className="object-cover lg:hidden -z-30" />
+        <div className="relative">
+          <Image
+            src={map}
+            alt={map}
+            className="object-contain absolute -top-32 right-0"
+          />
+        </div>
       </div>
       <div className="w-full text-center md:text-left md:w-1/2">
         <div className="md:flex gap-3 hidden items-center w-fit px-8 py-1 rounded-full bg-blue">
-          <p className="font-headline center gap-1 font-medium text-base">
+          <p className="font-headline center gap-1 lg:gap-5 font-medium text-base lg:text-4xl">
             Visit
-            <span className="pt-1 block">
-              <Image src={Visit} alt="image" width={14} />
+            <span className="pt-1 block w-3 md:w-5 lg:w-8">
+              <Image src={Visit} alt="image" width={50} />
             </span>
           </p>
         </div>
-        <div className="font-headline font-bold text-2xl text-secondary">
+        <div className="font-headline text-xl text-secondary">
           <h3
-            className={` md:text-3xl md:text-left xl:text-6xl py-8 ${open.className}`}
+            className={` md:text-3xl font-bold md:text-left lg:text-4xl xl:text-6xl py-8 ${open.className}`}
           >
             The Exotic <br />
             <span className="text-accent my-2 md:my-3 md:block">
@@ -29,16 +36,20 @@ const Hero = () => {
             Islands
           </h3>
         </div>
-        <button className="outlineButton px-8 py-4">Discover Now</button>
+        <button className="outlineButton px-8 py-4 md:px-4 lg:px-8 md:py-2 lg:py-4  ">
+          Discover Now
+        </button>
       </div>
       <span className="hero-bg hidden md:top-20"></span>
       <div className="w-1/2 section relative hidden md:block">
-        <Image
-          className="absolute top-1/2 -translate-y-1/2 md:block right-0"
-          src={model}
-          width={350}
-          alt="bg"
-        />
+        <div className="w-full md:w-40 lg:w-40 xl:w-96">
+          <Image
+            className="absolute top-1/2 -translate-y-1/2 md:block right-0 object-cover"
+            src={model}
+            width={450}
+            alt="bg"
+          />
+        </div>
       </div>
     </div>
   );

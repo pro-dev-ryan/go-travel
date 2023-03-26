@@ -134,7 +134,7 @@ p {
 }
 
 .section {
-  @apply w-full 2xl:max-w-6xl xl:mx-auto;
+  @apply w-full xl:max-w-6xl xl:mx-auto;
 }
 
 .abcenter {
