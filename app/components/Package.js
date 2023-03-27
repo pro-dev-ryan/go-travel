@@ -19,6 +19,9 @@ const Package = () => {
         <Link href="/" className="navButton hidden md:block">
           Cordeila
         </Link>
+        <Link href="/" className="navButton hidden lg:block">
+          Agatti
+        </Link>
         <Link href="/" className="navButton">
           More
         </Link>
