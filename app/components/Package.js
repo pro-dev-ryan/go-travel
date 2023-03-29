@@ -1,6 +1,7 @@
+"use client";
 import Link from "next/link";
 import Card from "./Card";
-
+import Slider from "./Interactivity/Slider";
 const Package = () => {
   return (
     <div className="cardFrame mx-4 md:mx-16">
@@ -26,11 +27,10 @@ const Package = () => {
           More
         </Link>
       </div>
-      <div className="stack-sect">
-        {[...Array(3)].map((pack, i) => (
-          <Card key={i} pack={pack} />
-        ))}
+      <div className="lg:flex">
+        <Slider />
       </div>
+
       <button className="outlineButton px-4 py-2">Discover More</button>
     </div>
   );
