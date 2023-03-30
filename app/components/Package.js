@@ -27,7 +27,7 @@ const Package = () => {
           More
         </Link>
       </div>
-      <div className="lg:flex">
+      <div className="overflow-hidden">
         <Slider />
       </div>
 
