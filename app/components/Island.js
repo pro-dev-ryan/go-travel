@@ -2,7 +2,7 @@ import Islands from "./Islands";
 
 const Island = () => {
   return (
-    <div className="cardFrame mx-4 md:mx-16">
+    <div className="cardFrame spacing-sect">
       <h3>Island Stays</h3>
       <p className="lightText">
         One can choose from a variety of beautiful coral islands which offers

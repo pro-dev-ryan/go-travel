@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const SearchFlights = () => {
   return (
-    <div className="mx-4 md:mx-16 font-textline text-secondary">
+    <div className="spacing-sect font-textline text-secondary">
       <form action="" className="space-y-4">
         <div className="flex flex-col gap-5 md:gap-2 md:flex-row ">
           {/* left-side */}

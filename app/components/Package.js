@@ -4,7 +4,7 @@ import Card from "./Card";
 import Slider from "./Interactivity/Slider";
 const Package = () => {
   return (
-    <div className="cardFrame mx-4 md:mx-16">
+    <div className="cardFrame spacing-sect">
       <h3>Best Packages For You</h3>
       <p className="lightText">
         This is a unique experience on ship, sea and land, exploring different

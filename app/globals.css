@@ -98,6 +98,14 @@ body::-webkit-scrollbar {
   .stack-sect {
     @apply space-y-10 md:space-y-0 md:grid grid-cols-2 lg:grid-cols-3 justify-between items-center gap-5;
   }
+
+  .footer-nav-title {
+    @apply text-light text-base md:text-lg lg:text-xl font-textline font-textline;
+  }
+
+  .footer-nav-link {
+    @apply flex flex-col gap-2 text-light lightText text-left md:text-base xl:text-lg font-textline;
+  }
 }
 
 h1 {
@@ -132,8 +140,12 @@ p {
   @apply flex flex-col md:flex-row;
 }
 
+.spacing-sect {
+  @apply mx-4 md:mx-16 xl:mx-20;
+}
+
 .section {
-  @apply w-full xl:max-w-6xl xl:mx-auto;
+  @apply w-full 2xl:max-w-7xl xl:mx-auto;
 }
 
 .abcenter {

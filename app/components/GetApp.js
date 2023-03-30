@@ -3,7 +3,7 @@ import mobile from "../../public/assets/misc/getApp.png";
 
 const GetApp = () => {
   return (
-    <div className="getApp mx-4 md:mx-16">
+    <div className="getApp spacing-sect">
       <div className="relative -mb-14 flex justify-between items-center p-4 md:p-5">
         <div className="">
           <div className="space-y-3 md:space-y-0">

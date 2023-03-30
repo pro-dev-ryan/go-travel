@@ -8,7 +8,7 @@ const Slider = () => {
   return (
     <Swiper
       modules={[Autoplay, Pagination]}
-      pagination={{ el: ".swiper-pagination", type: "custom" }}
+      pagination
       autoplay={{ delay: 5000 }}
       loop={false}
       grabCursor={true}
@@ -33,7 +33,7 @@ const Slider = () => {
           <Card pack={pack} />
         </SwiperSlide>
       ))}
-      <div className=".swiper-pagination w-5 h-5 bg-primary rounded-full "></div>
+      {/* <div className="swiper-pagination w-5 h-5 bg-primary rounded-full "></div> */}
     </Swiper>
   );
 };

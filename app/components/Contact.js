@@ -1,6 +1,6 @@
 const Contact = () => {
   return (
-    <div className="flex flex-col md:flex-row justify-around md:justify-between items-center contact-bg mx-4 md:mx-16 h-36 text-center gap-3 md:px-6">
+    <div className="flex flex-col md:flex-row justify-around md:justify-between items-center contact-bg spacing-sect h-36 text-center gap-3 md:px-6">
       <div className="w-full pt-2 md:pt-0 md:space-y-1 md:w-[65%] md:text-left">
         <p className="text-xl text-light font-medium md:font-semibold  font-headline">
           Let’s Ready to Explore The <br /> World With Us.
