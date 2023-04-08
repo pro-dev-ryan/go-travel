@@ -3,16 +3,20 @@ import man from "/public/assets/Login/left-img.png";
 
 export default function page() {
   return (
-    <div className="spacing-sect space-y-20 booking max-h-screen mb-52">
-      <h1 className="text-center pt-4">My Booking</h1>
-      <div className="md:flex items-center justify-between gap-5">
-        <div className="hidden md:block w-1/2">
-          <Image src={man} alt="Man with Bag" className="w-80" />
+    <div className="spacing-sect space-y-20 booking max-h-screen mb-52 lg:mb-80">
+      <h1 className="text-center pt-4 lg:pt-40">My Booking</h1>
+      <div className="md:flex md:flex-col-reverse lg:flex-row items-center justify-between md:gap-16">
+        <div className="hidden md:block lg:w-1/2">
+          <Image
+            src={man}
+            alt="Man with Bag"
+            className="w-96 lg:w-[520px] xl:w-[601px] mt-5"
+          />
         </div>
-        <div className="cardPlate md:w-1/2 space-y-5">
+        <div className="cardPlate md:w-4/5 lg:w-1/2 space-y-5">
           <form action="" method="get">
             <div className="">
-              <label className="text-lg font-medium" htmlFor="email">
+              <label className="text-xl font-medium" htmlFor="email">
                 Email
               </label>
               <div>
