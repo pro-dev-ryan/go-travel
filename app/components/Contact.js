@@ -1,6 +1,6 @@
 const Contact = () => {
   return (
-    <div className="flex flex-col md:flex-row justify-around md:justify-between items-center contact-bg spacing-sect h-36 text-center gap-3 md:px-6">
+    <div className="flex flex-col md:flex-row justify-around md:justify-between items-center contact-bg spacing-sect h-36 lg:h-56 text-center gap-3 md:px-6">
       <div className="w-full pt-2 md:pt-0 md:space-y-1 md:w-[65%] md:text-left">
         <p className="text-xl text-light font-medium md:font-semibold  font-headline">
           Let’s Ready to Explore The <br /> World With Us.
@@ -11,7 +11,7 @@ const Contact = () => {
         </p>
       </div>
       <div className="center items-center mb-5 md:mb-0 md:w-[30%] md:justify-end">
-        <button className="primaryButton md:px-9 py-3  bg-white text-secondary px-4">
+        <button className="primaryButton md:px-9 py-3 bg-white text-secondary px-4">
           Contact Us
         </button>
       </div>

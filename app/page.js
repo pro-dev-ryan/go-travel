@@ -1,7 +1,6 @@
 import Image from "next/image";
 import plane from "../public/assets/hero/Group 1000003659.png";
 import Contact from "./components/Contact";
-import GetApp from "./components/GetApp";
 import Hero from "./components/Hero";
 import Island from "./components/Island";
 import Package from "./components/Package";
@@ -22,7 +21,6 @@ export default function Home() {
       <Island />
       <Contact />
       <Testimonials />
-      <GetApp />
     </main>
   );
 }

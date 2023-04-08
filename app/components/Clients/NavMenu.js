@@ -12,7 +12,7 @@ const NavMenu = () => {
       onClick={() => setIsOpen(!isOpen)}
       className="text-sm md:text-base md:m-1.5 text-light w-full text-center font-medium hover:text-primary py-[1.14rem] md:py-6"
       key={i}
-      href={link}
+      href="/login"
     >
       {link}
     </Link>
@@ -30,8 +30,8 @@ const NavMenu = () => {
         />
       </button>
       <ul
-        className={`bg-secondary md:bg-primary items-center absolute w-full md:left-0 transition-all duration-300 ease-in-out flex flex-col gap-2 ${
-          isOpen ? "opacity-1 top-[7.5rem] md:top-96" : "opacity-0 top-[1000px]"
+        className={`bg-secondary overflow-y-hidden md:bg-primary items-center absolute w-full md:left-0 transition-all duration-300 ease-in-out flex flex-col gap-2 ${
+          isOpen ? "opacity-1 top-[7.5rem] md:top-96" : "opacity-0 top-[500px]"
         }`}
       >
         {menu}

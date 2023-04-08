@@ -1,9 +1,11 @@
 import Image from "next/image";
 import Link from "next/link";
 import footerLogo from "../../public/footerLogo.png";
+import GetApp from "./GetApp";
 const Footer = () => {
   return (
-    <div className="footer-bg space-y-4 md:space-y-3">
+    <div className="footer-bg mt-10 space-y-4 md:space-y-3">
+      <GetApp />
       <div className="flex flex-col md:gap-5 lg:gap-8 spacing-sect md:flex-row items-center justify-between md:items-start space-y-5 md:space-y-0 font-headline">
         {/* Profile */}
         <div className="hidden md:flex flex-col md:w-1/3">
@@ -89,7 +91,7 @@ const Footer = () => {
           />
         </Link>
       </div>
-      <hr className="mx-4" />
+      <hr className="spacing-sect" />
       <p className="text-light text-xs md:text-base xl:text-lg font-light font-headline text-center pb-2">
         Copyright © 2023 GoL Travels Private Limited. All Rights Reserved.
       </p>

@@ -1,4 +1,5 @@
-import Testimonial from "./Testimonial";
+import Slider from "./Interactivity/Slider";
+import Test from "./Interactivity/Test";
 
 const Testimonials = () => {
   return (
@@ -6,10 +7,8 @@ const Testimonials = () => {
       <h3 className="mb-20 md:mb-5">
         What Our Clients Says <br /> About Us
       </h3>
-      <div className="space-y-20 md:space-y-0 spacing-sect stack-sect">
-        {[...Array(3)].map((card, i) => (
-          <Testimonial key={i} card={card} />
-        ))}
+      <div className="spacing-sect">
+        <Test />
       </div>
     </div>
   );

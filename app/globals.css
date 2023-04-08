@@ -43,7 +43,7 @@ body::-webkit-scrollbar {
 .getApp {
   background-color: #000000;
   position: relative;
-  margin: 6.5em;
+  margin-top: 6.5em;
   border-radius: 12px;
   z-index: 1;
 }
@@ -68,7 +68,6 @@ body::-webkit-scrollbar {
   position: relative;
   background-image: url("/assets/hero/map.png");
   background-repeat: no-repeat;
-  padding-top: 5.5em;
   background-size: cover;
   background-position: center center;
 }
@@ -81,6 +80,25 @@ body::-webkit-scrollbar {
   left: 0;
   z-index: -5;
   background-color: #41a5c1;
+}
+
+.booking {
+  position: relative;
+  z-index: 1;
+}
+
+.booking::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  background-image: url("/assets/Login/Element.png");
+  background-repeat: no-repeat;
+  background-size: 140%;
+  background-position: top left;
 }
 
 @tailwind base;
@@ -106,14 +124,17 @@ body::-webkit-scrollbar {
   .footer-nav-link {
     @apply flex flex-col gap-2 text-light lightText text-left md:text-base xl:text-lg font-textline;
   }
+
+  .box {
+    @apply border-2 border-primary rounded w-full py-2 px-4 outline-none mt-2;
+  }
+  p {
+    @apply text-sm sm:text-base lg:text-lg text-neutral font-normal;
+  }
 }
 
 h1 {
   @apply text-3xl sm:text-3xl lg:text-6xl text-secondary font-bold;
-}
-
-p {
-  @apply text-sm sm:text-base lg:text-lg text-neutral font-normal;
 }
 
 .lightText {

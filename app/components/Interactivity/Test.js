@@ -3,15 +3,15 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination } from "swiper";
 import "swiper/swiper-bundle.min.css";
 import "swiper/css/pagination";
-import Card from "../Card";
+import Testimonial from "../Testimonial";
 
-const Slider = () => {
+const Test = () => {
   return (
     <Swiper
       modules={[Autoplay, Pagination]}
       pagination
-      autoplay={{ delay: 5000 }}
-      loop={false}
+      autoplay={{ delay: 8000 }}
+      loop={true}
       grabCursor={true}
       spaceBetween={10}
       breakpoints={{
@@ -29,13 +29,13 @@ const Slider = () => {
         },
       }}
     >
-      {[...Array(6)].map((pack, i) => (
-        <SwiperSlide className="center" pack={pack} key={i}>
-          <Card pack={pack} />
+      {[...Array(6)].map((review, i) => (
+        <SwiperSlide className="center" card={review} key={i}>
+          <Testimonial card={review} />
         </SwiperSlide>
       ))}
     </Swiper>
   );
 };
 
-export default Slider;
+export default Test;

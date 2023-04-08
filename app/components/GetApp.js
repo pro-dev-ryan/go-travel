@@ -3,8 +3,8 @@ import mobile from "../../public/assets/misc/getApp.png";
 
 const GetApp = () => {
   return (
-    <div className="getApp spacing-sect">
-      <div className="relative -mb-14 flex justify-between items-center p-4 md:p-5">
+    <div className="getApp spacing-sect relative -top-12 md:-top-14 lg:-top-20">
+      <div className="flex justify-between items-center p-4 md:p-5">
         <div className="">
           <div className="space-y-3 md:space-y-0">
             <h3 className="text-light">Download Our App</h3>
@@ -20,10 +20,8 @@ const GetApp = () => {
               />
             </div>
             <div className="mr-2">
-              <p className="uppercase text-light text-xs font-medium">
-                get it it on
-              </p>
-              <p className="font-extralight text-light">Google Play</p>
+              <p className="uppercase text-light">get it it on</p>
+              <p className="font-medium text-light">Google Play</p>
             </div>
           </div>
         </div>
@@ -37,10 +35,8 @@ const GetApp = () => {
             />
           </div>
           <div className="mr-2">
-            <p className="uppercase text-light text-xs font-medium">
-              get it it on
-            </p>
-            <p className="font-extralight text-light">Google Play</p>
+            <p className="uppercase text-light text-xs font-light">get it on</p>
+            <p className="font-normal text-light">Google Play</p>
           </div>
         </div>
         <div className="hidden md:block absolute right-5 bottom-5">

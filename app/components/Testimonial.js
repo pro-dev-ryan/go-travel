@@ -2,14 +2,14 @@ import Image from "next/image";
 
 const Testimonial = () => {
   return (
-    <div className="center relative cardPlate cardFrame shadow border-t-4 border-t-accent p-5 h-80 lg:h-96 md:my-14">
-      <div className="absolute -top-14">
+    <div className="center cardPlate shadow border-t-4 border-t-accent h-80 my-8 lg:h-96 md:my-16">
+      <div className="absolute -top-2 md:top-5 lg:top-6">
         <Image
           className="rounded-full border-8 border-light"
           src="https://api.lorem.space/image/face?w=150&h=150"
           alt="user"
-          width={120}
-          height={120}
+          width={90}
+          height={90}
         />
       </div>
       <div className="cardPlate pt-8">
