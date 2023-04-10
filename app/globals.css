@@ -20,6 +20,44 @@ body::-webkit-scrollbar {
   height: 650px;
 }
 
+.commonMap {
+  position: relative;
+}
+.commonMap::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  top: 0;
+  background-size: contain;
+  background-image: url("../public/assets/ataglance/svg/Vector.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.commonHero {
+  position: relative;
+  min-height: 280px;
+  max-height: 350px;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+  z-index: -5;
+}
+
+.commonHero::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  width: 100%;
+  height: 50%;
+  background-image: linear-gradient(to Top, transparent, #d2f4ff);
+}
+
 .contact-bg {
   position: relative;
   background-image: url("/assets/hero/map.png");
@@ -118,7 +156,7 @@ body::-webkit-scrollbar {
   }
 
   .footer-nav-title {
-    @apply text-light text-base md:text-lg lg:text-xl font-textline font-textline;
+    @apply text-light text-base md:text-lg lg:text-xl font-textline;
   }
 
   .footer-nav-link {
@@ -150,7 +188,7 @@ h1 {
 }
 
 .nav-class {
-  @apply sticky top-0 z-50 bg-transparent backdrop-blur-sm md:bg-gradient-to-b from-blue to-light bg-no-repeat py-2;
+  @apply sticky top-0 z-50 bg-transparent backdrop-blur-sm  py-2;
 }
 
 .center {

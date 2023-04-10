@@ -27,7 +27,7 @@ export default function RootLayout({ children }) {
       lang="en"
       className={`${open.variable} ${montserrat.variable} ${inter.variable}`}
     >
-      <body>
+      <body className="commonHero w-full">
         <Navbar />
         <div className="section">{children}</div>
         <Footer />

@@ -30,10 +30,10 @@ const NavMenu = () => {
         />
       </button>
       <ul
-        className={`bg-secondary overflow-y-hidden md:bg-primary items-center absolute w-full md:left-0 transition-all duration-300 ease-in-out flex flex-col gap-2 ${
+        className={`bg-secondary md:bg-primary items-center absolute w-full md:left-0 transition-all duration-300 ease-in-out flex flex-col gap-2 ${
           isOpen
-            ? "opacity-1 top-[7.5rem] md:top-80"
-            : "opacity-.5 top-[600px] md:-top-[700px]"
+            ? "opacity-1 top-[7.5rem] md:top-80 "
+            : "opacity-.5 -top-[580px] md:-top-[700px]"
         }`}
       >
         {menu}
