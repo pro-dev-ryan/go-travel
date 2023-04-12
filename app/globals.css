@@ -169,6 +169,9 @@ body::-webkit-scrollbar {
   p {
     @apply text-sm sm:text-base lg:text-lg text-neutral font-normal;
   }
+  .cardFrame {
+    @apply space-y-10 text-center md:space-y-5;
+  }
 }
 
 h1 {
@@ -179,16 +182,12 @@ h1 {
   @apply mx-1 font-light text-sm;
 }
 
-.cardFrame {
-  @apply space-y-10 text-center md:space-y-5;
-}
-
 .cardPlate {
   @apply rounded space-y-5 font-headline;
 }
 
 .nav-class {
-  @apply sticky top-0 z-50 bg-transparent backdrop-blur-sm  py-2;
+  @apply sticky top-0 z-50 bg-transparent backdrop-blur-sm py-2;
 }
 
 .center {

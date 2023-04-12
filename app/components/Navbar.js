@@ -33,7 +33,7 @@ const Navbar = () => {
   const sign = ["Login", "Sign Up"];
 
   return (
-    <nav className="nav-class ">
+    <nav className="nav-class">
       <div className="flex relative justify-between items-center mx-4 md:mx-16 xl:mx-20 z-40">
         <span className="block md:hidden">
           <NavMenu />
