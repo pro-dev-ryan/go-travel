@@ -11,7 +11,7 @@ export default function page() {
       </div>
       <div className="space-y-5 text-center">
         <h3>About Lakshadweep</h3>
-        <p className="text-left">
+        <p className="text-justify">
           Lakshadweep Islands commonly known as coral paradise of India, a group
           of islands which is scattered in the Arabian Sea. This is one of the
           worlds most spectacular tropical island systems, Lakshadweep is tucked
@@ -26,13 +26,13 @@ export default function page() {
         </p>
       </div>
       &nbsp;
-      <div className="relative mx-4 h-[300px] w-[342px]">
-        <div className="absolute border-4 w-[80%] h-[70%] border-secondary -z-10 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 rounded"></div>
+      <div className="relative h-[300px] w-full">
+        <div className="absolute border-4 w-[75%] h-[70%] border-secondary -z-10 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 rounded"></div>
         <Image
-          className="absolute top-0 -left-5 -z-30"
+          className="absolute top-0 left-0 -z-30"
           src={right}
           alt=""
-          width={180}
+          width={220}
         />
         <Image
           className="absolute top-0 right-3 z-20"
@@ -41,14 +41,14 @@ export default function page() {
           width={99}
         />
         <Image
-          className="absolute -bottom-5 left-1/2 -translate-x-1/2 z-10"
+          className="absolute -bottom-1/3 left-1/2 -translate-x-1/2 z-10"
           src={center}
           alt=""
-          width={180}
+          width={220}
         />
       </div>
       &nbsp;
-      <div className="space-y-2 text-left mt-5">
+      <div className="space-y-2 text-justify mt-5">
         <p>
           The pristine beauty, white sandy beaches, crystal clear water, shallow
           lagoon, rich marine wealth, pollution free environment, variety of
