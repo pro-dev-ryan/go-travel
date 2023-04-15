@@ -2,16 +2,15 @@ import Image from "next/image";
 import left from "../../public/assets/ataglance/images/left.png";
 import right from "../../public/assets/ataglance/images/right.png";
 import center from "../../public/assets/ataglance/images/Rectangle 422.png";
-import map from "../../public/assets/ataglance/svg/Vector.svg";
 export default function page() {
   return (
     <div className="spacing-sect">
       <div className="w-full center h-48 commonMap">
         <h1>At A Glance</h1>
-      </div>
-      <div className="space-y-5 text-center">
         <h3>About Lakshadweep</h3>
-        <p className="text-justify">
+      </div>
+      <div className="space-y-16 text-center gap-2  flex flex-col md:flex-row-reverse">
+        <p className="text-justify md:w-1/2">
           Lakshadweep Islands commonly known as coral paradise of India, a group
           of islands which is scattered in the Arabian Sea. This is one of the
           worlds most spectacular tropical island systems, Lakshadweep is tucked
@@ -24,30 +23,27 @@ export default function page() {
           come back. 4200 sq. kms of lagoon, rich in marine wealth, is spread
           over 36 islands in an area of 32 sq. kms.
         </p>
+        &nbsp;
+        <div className="relative my-14 h-[300px] w-full md:w-1/2">
+          <div className="absolute border-4 w-[80%] h-[80%] border-secondary -z-10 top-1/2 right-5 -translate-y-1/2 rounded"></div>
+          <div className="w-[220px] md:w-[164px] absolute -top-14 left-0 -z-30">
+            <Image className="" src={right} alt="" width={220} />
+          </div>
+          <Image
+            className="absolute -top-1 right-0 z-20"
+            src={left}
+            alt=""
+            width={99}
+          />
+          <Image
+            className="absolute top-20 right-16 z-10"
+            src={center}
+            alt=""
+            width={220}
+          />
+        </div>
       </div>
-      &nbsp;
-      <div className="relative my-14 h-[300px] w-full">
-        <div className="absolute border-4 w-[80%] h-[65%] border-secondary -z-10 top-1/2 right-5 -translate-y-1/2 rounded"></div>
-        <Image
-          className="absolute -top-14 left-0 -z-30"
-          src={right}
-          alt=""
-          width={220}
-        />
-        <Image
-          className="absolute -top-5 right-3 z-20"
-          src={left}
-          alt=""
-          width={99}
-        />
-        <Image
-          className="absolute top-20 right-16 z-10"
-          src={center}
-          alt=""
-          width={220}
-        />
-      </div>
-      <div className="space-y-2 text-justify ">
+      <div className="space-y-2 text-justify mt-16">
         <p>
           The pristine beauty, white sandy beaches, crystal clear water, shallow
           lagoon, rich marine wealth, pollution free environment, variety of
@@ -85,6 +81,10 @@ export default function page() {
           cruelties. The events in these geographically isolated islands were
           never known to the outside world.
         </p>
+      </div>
+      <div className="center">
+        <h3>Activities</h3>
+        <div></div>
       </div>
     </div>
   );
